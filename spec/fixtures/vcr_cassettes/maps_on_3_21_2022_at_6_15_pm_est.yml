@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mozambiquehe.re/maprotation?auth=4ci0wX4CxrqupfnV7xE8&version=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 21 Mar 2022 22:18:01 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      content-length:
+      - '541'
+      connection:
+      - keep-alive
+      content-location:
+      - maprotation.php
+      vary:
+      - negotiate,Accept-Encoding
+      tcn:
+      - choice
+      access-control-allow-origin:
+      - "*"
+      cf-cache-status:
+      - DYNAMIC
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0v1sB0Hib%2BfKFtVM2ZtSnjWvbuY29mQvdyAyP3KmsbSetyMjls61M6RRRbXzoXRiB67IxX%2F3g797LBnKDQ8ZpwfMwDXUOng%2BzWAaTclWaGqrVKZZ0chrveQl4VpTP5y4RwQRcSIT"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 6efa0f9a6ac59ab1-MIA
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "battle_royale": {
+                "current": {
+                    "start": 1647898200,
+                    "end": 1647905400,
+                    "readableDate_start": "2022-03-21 21:30:00",
+                    "readableDate_end": "2022-03-21 23:30:00",
+                    "map": "Olympus",
+                    "code": "olympus_rotation",
+                    "DurationInSecs": 7200,
+                    "DurationInMinutes": 120,
+                    "asset": "https:\/\/apexlegendsstatus.com\/assets\/maps\/Olympus.png",
+                    "remainingSecs": 4319,
+                    "remainingMins": 72,
+                    "remainingTimer": "01:11:59"
+                },
+                "next": {
+                    "start": 1647905400,
+                    "end": 1647912600,
+                    "readableDate_start": "2022-03-21 23:30:00",
+                    "readableDate_end": "2022-03-22 01:30:00",
+                    "map": "Kings Canyon",
+                    "code": "kings_canyon_rotation",
+                    "DurationInSecs": 7200,
+                    "DurationInMinutes": 120
+                }
+            },
+            "arenas": {
+                "current": {
+                    "start": 1647900900,
+                    "end": 1647901800,
+                    "readableDate_start": "2022-03-21 22:15:00",
+                    "readableDate_end": "2022-03-21 22:30:00",
+                    "map": "Phase runner",
+                    "code": "arenas_phase_runner",
+                    "DurationInSecs": 900,
+                    "DurationInMinutes": 15,
+                    "asset": "https:\/\/apexlegendsstatus.com\/assets\/maps\/Arena_Phase_Runner.png",
+                    "remainingSecs": 719,
+                    "remainingMins": 12,
+                    "remainingTimer": "00:11:59"
+                },
+                "next": {
+                    "start": 1647901800,
+                    "end": 1647902700,
+                    "readableDate_start": "2022-03-21 22:30:00",
+                    "readableDate_end": "2022-03-21 22:45:00",
+                    "map": "Habitat",
+                    "code": "arenas_habitat",
+                    "DurationInSecs": 900,
+                    "DurationInMinutes": 15
+                }
+            },
+            "ranked": {
+                "current": {
+                    "map": "Olympus",
+                    "asset": "https:\/\/apexlegendsstatus.com\/assets\/maps\/Olympus.png"
+                },
+                "next": {
+                    "map": "Kings Canyon"
+                }
+            },
+            "arenasRanked": {
+                "current": {
+                    "start": 1647900000,
+                    "end": 1647902400,
+                    "readableDate_start": "2022-03-21 22:00:00",
+                    "readableDate_end": "2022-03-21 22:40:00",
+                    "map": "Phase runner",
+                    "code": "arenas_phase_runner",
+                    "DurationInSecs": 2400,
+                    "DurationInMinutes": 40,
+                    "asset": "https:\/\/apexlegendsstatus.com\/assets\/maps\/Arena_Phase_Runner.png",
+                    "remainingSecs": 1319,
+                    "remainingMins": 22,
+                    "remainingTimer": "00:21:59"
+                },
+                "next": {
+                    "start": 1647902400,
+                    "end": 1647904800,
+                    "readableDate_start": "2022-03-21 22:40:00",
+                    "readableDate_end": "2022-03-21 23:20:00",
+                    "map": "Overflow",
+                    "code": "arenas_overflow",
+                    "DurationInSecs": 2400,
+                    "DurationInMinutes": 40
+                }
+            }
+        }
+  recorded_at: Mon, 21 Mar 2022 22:18:01 GMT
+recorded_with: VCR 6.1.0

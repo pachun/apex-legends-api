@@ -1,3 +1,10 @@
+require "simplecov"
+
+if ENV["COVERAGE"] || ENV["CI"]
+  SimpleCov.minimum_coverage 100
+  SimpleCov.start "rails"
+end
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -61,4 +68,8 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+end
+
+Dir[Rails.root.join('spec/support/**/*.rb')].each do |spec_support_file|
+  require spec_support_file
 end
